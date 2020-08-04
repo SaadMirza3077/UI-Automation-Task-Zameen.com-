@@ -1,0 +1,40 @@
+{
+  "name": "testproject",
+  "version": "1.0.0",
+  "description": "The tool used for doing this task is Protractor and the language is Typescript. \r All the main code files which contains logic are present in the \"src\" folder.",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine-data-provider": "^2.2.0",
+    "jasmine-reporters": "^2.3.2",
+    "protractor-html-reporter-2": "^1.0.4",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "reporters": "0.0.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.5.0",
+    "@types/jasminewd2": "^2.0.8",
+    "@types/node": "^12.0.12",
+    "protractor": "^5.4.2",
+    "typescript": "~3.6",
+    "jasmine2-protractor-utils": "^1.3.0",
+    "ts-node": "^8.3.0"
+  },
+  "scripts": {
+    "webdriver-update": "webdriver-manager update",
+    "webdriver-start": "webdriver-manager start",
+    "protractor": "./node_modules/protractor/built/cli.js",
+    "pretest": "tsc",
+    "test": "protractor JSFiles/src/conf.js",
+    "preQ1": "tsc",
+    "Q1": "protractor JSFiles/conf.js --suite Q1",
+    "preQ2": "tsc",
+    "Q2": "protractor JSFiles/conf.js --suite Q2",
+    "preQ3": "tsc",
+    "Q3": "protractor JSFiles/conf.js --suite Q3",
+    "preAll": "tsc",
+    "All": "protractor JSFiles/conf.js --suite All"
+  },
+  "author": "",
+  "license": "ISC"
+}
